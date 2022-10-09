@@ -7,7 +7,8 @@ https://user-images.githubusercontent.com/67486606/193334529-476a98f4-2a07-49a6-
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies.
+* Use the <b>Python Version 3.8<b/> as rasa supports this only.<br/>
+* Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies.
 
 ```bash
 pip install -r requirements.txt
