@@ -1,1 +1,35 @@
-# Jivanam
+# Jivanam _(Life in Sanskrit)_
+## One stop destination for pregnant women
+https://user-images.githubusercontent.com/67486606/193334529-476a98f4-2a07-49a6-b5c3-8abab5156ad1.mp4
+
+
+
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies.
+
+```bash
+pip install -r requirements.txt
+```
+
+
+## Running Rasa server
+```
+cd Postpartem_Bot
+```
+```
+rasa run 
+```
+
+## Running Flask server  _open another terminal_
+```
+python run.py
+```
+## To run website  _open browser_
+```
+localhost:8080
+```
+
+## Project video demo and ppt
+[Demo](https://drive.google.com/drive/folders/1I1QFpAo1n-opBKE7Lh97h5hPMM8McRMc)
