@@ -8,6 +8,7 @@
 
 .chat-container
 {
+    opacity: 1 !important;
     padding: 2rem;
 
     background-color: #FFF;

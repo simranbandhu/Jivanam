@@ -17,7 +17,22 @@
     align-items: center;
 
     background-image:url(/static/BG.png);
+
+    animation: text_reveal 5s ease forwards;
 }
+
+@keyframes text_reveal
+{
+  0%
+  {
+    color: transparent;
+  }
+  100%
+  {
+    color: white;
+  }
+}
+
 .TitlePanel-margin
 {
     height: 15vh;

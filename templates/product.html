@@ -1,56 +1,54 @@
-
 {% extends "layout.html" %}
 {% block body %}
-<link rel="stylesheet" href="static/css/style.css" />
 <link rel="stylesheet" href="static/css/map.css" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/card.css')}}">
 <div class="image-div">
     Our Products
 </div>
 
-<!-- Main Section -->
-<div id="main-news-container" class="container">
-    <div class="row">
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem;box-shadow: 2px 4px 4px 2px rgba(0,0,0,.2);">
-                <img src="/static/Book.png"
-                    class="card-img-top img-fluid" alt="News">
-                <div class="card-body">
-                    <h5 class="card-title">What to expect when you are expecting</h5>
-                    <p class="card-text"><strong>Desc: </strong> A book to prepare for you first baby</p>
-                    <p class="card-text"><strong>Price: </strong> 199 Rupees</p>
-                    <a target="_blank"
-                        href="#"
-                        class="btn" style="border-radius: 2rem; background-color:#93215A; border:none; color: #ffeaeb;font-weight: 500;font-size: large;">Buy Now</a>
-                </div>
+<div class="card-class-container">
+    <div class="card-class">
+        <img class="card-class-image" src="/static/Book.png" alt="Card image cap">
+        <div>
+            <div class="card-class-title">
+                What to expect ...
             </div>
-        </div>
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem;box-shadow: 2px 4px 4px 2px rgba(0,0,0,.2);">
-                <img src="/static/book2.png"
-                    class="card-img-top img-fluid" alt="News">
-                <div class="card-body">
-                    <h5 class="card-title">Postpartum care</h5>
-                    <p class="card-text"><strong>Desc: </strong> A book to recover from your first pregnancy</p>
-                    <p class="card-text"><strong>Price: </strong> 199 Rupees</p>
-                    <a target="_blank"
-                        href="#"
-                        class="btn" style="border-radius: 2rem; background-color:#93215A; border:none; color: #ffeaeb;font-weight: 500;font-size: large;">Buy Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem;box-shadow: 2px 4px 4px 2px rgba(0,0,0,.2);">
-                <img src="/static/book3.png"
-                    class="card-img-top" alt="News">
-                <div class="card-body">
-                    <h5 class="card-title">Parental guide</h5>
-                    <p class="card-text"><strong>Desc: </strong> This book will help you upbring your child healthier</p>
-                    <p class="card-text"><strong>Price: </strong> 199 Rupees</p>
-                    <a target="_blank" href="#"
-                        class="btn" style="border-radius: 2rem; background-color:#93215A; border:none; color: #ffeaeb;font-weight: 500;font-size: large;">Buy Now</a>
-                </div>
+            <div class="card-class-subtext"><strong>Desc: </strong> A book to prepare you for your first baby</div>
+            <div class="card-class-subtext"><strong>Price: </strong> 199 Rupees</div>
+            <div class="card-class-button">
+                BUY NOW
             </div>
         </div>
     </div>
+
+    <div class="card-class">
+        <img class="card-class-image" src="/static/Book2.png" alt="Card image cap">
+        <div>
+            <div class="card-class-title">
+                Postpartum care
+            </div>
+            <div class="card-class-subtext"><strong>Desc: </strong> A book to recover from your first pregnancy</div>
+            <div class="card-class-subtext"><strong>Price: </strong> 199 Rupees</div>
+            <div class="card-class-button">
+                BUY NOW
+            </div>
+        </div>
+    </div>
+
+    <div class="card-class">
+        <img class="card-class-image" src="/static/Book3.png" alt="Card image cap">
+        <div>
+            <div class="card-class-title">
+                Parental guide
+            </div>
+            <div class="card-class-subtext"><strong>Desc: </strong>This book will help you upbring your child healthier
+            </div>
+            <div class="card-class-subtext"><strong>Price: </strong> 199 Rupees</div>
+            <div class="card-class-button">
+                BUY NOW
+            </div>
+        </div>
+    </div>
+
 </div>
-    {% endblock %}
+{% endblock %}

@@ -1,50 +1,47 @@
-
 {% extends "layout.html" %}
 {% block body %}
-<link rel="stylesheet" href="static/css/style.css" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/card.css')}}">
+
 <link rel="stylesheet" href="static/css/map.css" />
 <div class="image-div">
     FOOD FOR PREGNANCY
 </div>
 
-<!-- Main Section -->
-<div id="main-news-container" class="container">
-    <div class="row">
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem; height: 19rem;box-shadow: 2px 4px 4px 2px rgba(0,0,0,.2);">
-                <img src="https://m.media-amazon.com/images/I/71cs5TNn-LL._SX679_.jpg"
-                    class="card-img-top img-fluid" alt="News">
-                <div class="card-body">
-                    <h5 class="card-title">Avocado</h5>
-                    <a target="_blank"
-                        href="https://www.amazon.in/Fresh-Avocado-2-Pieces-Imported/dp/B07L8H6L2R/ref=sr_1_3_f3_0o_fs?keywords=avocado+fruit&qid=1664550219&qu=eyJxc2MiOiI0Ljc3IiwicXNhIjoiNC4xMyIsInFzcCI6IjMuNjAifQ%3D%3D&sr=8-3"
-                        class="btn" style="border-radius: 2rem; background-color:#93215A; border:none; color: #ffeaeb;font-weight: 500;font-size: large;">Buy Now</a>
-                </div>
-            </div>
+<div class="card-class-container">
+    <div class="card-class">
+        <img class="card-class-image" src="https://m.media-amazon.com/images/I/71cs5TNn-LL._SX679_.jpg"
+            alt="Card image cap">
+        <div>
+            <div class="card-class-title">Avocado</div>
+            <a class="card-class-button"
+                href="https://www.amazon.in/Fresh-Avocado-2-Pieces-Imported/dp/B07L8H6L2R/ref=sr_1_3_f3_0o_fs?keywords=avocado+fruit&qid=1664550219&qu=eyJxc2MiOiI0Ljc3IiwicXNhIjoiNC4xMyIsInFzcCI6IjMuNjAifQ%3D%3D&sr=8-3">
+                BUY NOW
+            </a>
         </div>
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem; height: 19rem;box-shadow: 2px 4px 4px 2px rgba(0,0,0,.2);">
-                <img src="https://onemg.gumlet.io/images/wmrzfmfm0am0iydr8h50/walnut-0.jpg"
-                    class="card-img-top img-fluid" alt="News">
-                <div class="card-body">
-                    <h5 class="card-title">Walnut</h5>
-                    <a target="_blank"
-                        href="https://www.amazon.in/Happilo-Deluxe-Natural-Kashmiri-Walnut-Kernels/dp/B01LWJQ6KJ/ref=sr_1_1_sspa?keywords=walnuts&qid=1664552863&qu=eyJxc2MiOiI1LjY2IiwicXNhIjoiNS4yNSIsInFzcCI6IjQuOTkifQ%3D%3D&sprefix=walnu%2Caps%2C325&sr=8-1-spons&th=1"
-                        class="btn" style="border-radius: 2rem; background-color:#93215A; border:none; color: #ffeaeb;font-weight: 500;font-size: large;">Buy Now</a>
-                </div>
-            </div>
+    </div>
+    <div class="card-class">
+        <img class="card-class-image" src="https://onemg.gumlet.io/images/wmrzfmfm0am0iydr8h50/walnut-0.jpg"
+            alt="Card image cap">
+        <div>
+            <div class="card-class-title">Walnut</div>
+            <a class="card-class-button"
+                href="https://www.amazon.in/Happilo-Deluxe-Natural-Kashmiri-Walnut-Kernels/dp/B01LWJQ6KJ/ref=sr_1_1_sspa?keywords=walnuts&qid=1664552863&qu=eyJxc2MiOiI1LjY2IiwicXNhIjoiNS4yNSIsInFzcCI6IjQuOTkifQ%3D%3D&sprefix=walnu%2Caps%2C325&sr=8-1-spons&th=1">
+                BUY NOW
+            </a>
         </div>
-        <div class="col-sm-12 col-md-4 d-flex justify-content-center">
-            <div class="card" style="width: 18rem; height: 19rem;box-shadow: 2px 4px 4px 2px rgba(0,0,0,.2);">
-                <img src="https://post.healthline.com/wp-content/uploads/2020/03/oats-oatmeal-732x549-thumbnail.jpg"
-                    class="card-img-top" alt="News">
-                <div class="card-body">
-                    <h5 class="card-title">Oats</h5>
-                    <a target="_blank" href="https://www.amazon.in/Quaker-Oats-2kg/dp/B01LYEV6RF/ref=sr_1_5?crid=847O16W22X9E&keywords=oats&qid=1664553113&qu=eyJxc2MiOiI0LjgwIiwicXNhIjoiNC41OCIsInFzcCI6IjQuMzcifQ%3D%3D&sprefix=oat%2Caps%2C351&sr=8-5"
-                        class="btn" style="border-radius: 2rem; background-color:#93215A; border:none; color: #ffeaeb;font-weight: 500;font-size: large;">Buy Now</a>
-                </div>
-            </div>
+    </div>
+    <div class="card-class">
+        <img class="card-class-image"
+            src="https://post.healthline.com/wp-content/uploads/2020/03/oats-oatmeal-732x549-thumbnail.jpg"
+            alt="Card image cap">
+        <div>
+            <div class="card-class-title">Oats</div>
+            <a class="card-class-button"
+                href="https://www.amazon.in/Quaker-Oats-2kg/dp/B01LYEV6RF/ref=sr_1_5?crid=847O16W22X9E&keywords=oats&qid=1664553113&qu=eyJxc2MiOiI0LjgwIiwicXNhIjoiNC41OCIsInFzcCI6IjQuMzcifQ%3D%3D&sprefix=oat%2Caps%2C351&sr=8-5">
+                BUY NOW
+            </a>
         </div>
     </div>
 </div>
-    {% endblock %}
+
+{% endblock %}
