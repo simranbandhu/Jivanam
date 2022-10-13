@@ -2,22 +2,24 @@
 {% block body%}
 
 
-    <!-- AnyChart CSS -->
-    <link rel="stylesheet" href="static/css/anychart/anychart-ui.min.css" />
-    <link rel="stylesheet" href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" />
+<!-- AnyChart CSS -->
+<link rel="stylesheet" href="static/css/anychart/anychart-ui.min.css" />
+<link rel="stylesheet" href="https://cdn.anychart.com/releases/v8/fonts/css/anychart-font.min.css" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="static/css/style.css" />
-    <link rel="stylesheet" href="static/css/map.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
+<!-- CSS -->
+<link rel="stylesheet" href="static/css/style.css" />
+<link rel="stylesheet" href="static/css/map.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" />
 
-   <!-- Top Section -->
-   <div id="top-header" class="container-fluid">
+<!-- Top Section -->
+<div class="image-div">
+    <div id="top-header" class="container-fluid">
         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center">
             <h1>Health Measure Playground</h1>
             <h6>Predict MMR for a Population Given Top-5 Determinant Health Measures</h6>
         </div>
     </div>
+</div>
 </div>
 
 <!-- Main Section -->
@@ -40,9 +42,9 @@
                         <div class="form-group">
                             <label class="col-auto control-label" for="diabetes"><b>Diabetes:</b></label>
                             <div class="col-auto">
-                                <input type="number" min=0 step="any" class="form-control" id="diabetes"
-                                    name="diabetes" placeholder="Enter a value (average = 9.7)">
-    
+                                <input type="number" min=0 step="any" class="form-control" id="diabetes" name="diabetes"
+                                    placeholder="Enter a value (average = 9.7)">
+
                             </div>
                         </div>
 
@@ -51,7 +53,7 @@
                             <div class="col-auto">
                                 <input type="number" min=0 step="any" class="form-control" id="prem_death"
                                     name="prem_death" placeholder="Enter a value (average = 7,546)">
-    
+
                             </div>
                         </div>
 
@@ -61,7 +63,7 @@
                             <div class="col-auto">
                                 <input type="number" min=0 step="any" class="form-control" id="phys_inac"
                                     name="phys_inac" placeholder="Enter a value (average = 24.6)">
-    
+
                             </div>
                         </div>
 
@@ -71,7 +73,7 @@
                             <div class="col-auto">
                                 <input type="number" min=0 step="any" class="form-control" id="low_birthweight"
                                     name="low_birthweight" placeholder="Enter a value (average = 8.1)">
-    
+
                             </div>
                         </div>
 
@@ -81,8 +83,8 @@
                             <div class="col-auto">
                                 <input type="number" min=0 step="any" class="form-control" id="health_stat_fem"
                                     name="health_stat_fem" placeholder="Enter a value (average = 52.1)">
-    
-                                    
+
+
                             </div>
                         </div>
 
@@ -111,8 +113,9 @@
             <div id="overview">
                 <p>
                     The MMR presented in the graph above is based on averages of public health measures from the
-                    years 2009 to 2019. The interactive form allows users to input their own values for public health 
-                    measures to explore a measure's effect on MMR. The table below shows possible values for health measures
+                    years 2009 to 2019. The interactive form allows users to input their own values for public health
+                    measures to explore a measure's effect on MMR. The table below shows possible values for health
+                    measures
                     that users might consider entering.
                 </p>
             </div>
@@ -154,7 +157,7 @@
                         <td class="text-center">11,485</td>
                     </tr>
                     <tr>
-                        <th scope="row" >Physical Inactivity</th>
+                        <th scope="row">Physical Inactivity</th>
                         <td class="text-left">Percentage of adults who reported no physical activity or
                             exercise other than their job in the past 30 days.</td>
                         <td class="text-center">15.7</td>
@@ -162,14 +165,14 @@
                         <td class="text-center">38.1</td>
                     </tr>
                     <tr>
-                        <th scope="row" >Low Birthweight</th>
+                        <th scope="row">Low Birthweight</th>
                         <td class="text-left">Percentage of infants weighing less than 2,500 grams.</td>
                         <td class="text-center">5.6</td>
                         <td class="text-center">8.1</td>
                         <td class="text-center">12.3</td>
                     </tr>
                     <tr>
-                        <th scope="row" >High Health Status - Female</th>
+                        <th scope="row">High Health Status - Female</th>
                         <td class="text-left">Percentage of females who reported their health as very
                             good or excellent.</td>
                         <td class="text-center">39.3</td>
@@ -181,12 +184,12 @@
             <div class="row">
                 <span class="caption col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <b>Note:</b> Terms and description are based on the <a
-                    href="https://www.americashealthrankings.org/learn/reports/2019-health-of-women-and-children-report"
-                    target="_blank">2019 HWC Report</a>.
+                        href="https://www.americashealthrankings.org/learn/reports/2019-health-of-women-and-children-report"
+                        target="_blank">2019 HWC Report</a>.
                 </span>
             </div>
         </div>
-    </div>          
+    </div>
 </div>
 
 <!-- D3 JS -->
