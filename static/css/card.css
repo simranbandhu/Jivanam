@@ -19,13 +19,13 @@
     padding-bottom: 1.8rem;
     margin: 1rem;
 
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 }
 .card-class:hover
 {
-    box-shadow: 5px 5px 84px 1px rgba(0,0,0,0.31);
+    box-shadow: 5px 5px 84px 1px rgba(54, 33, 82, 0.31);
 
-    transition: all 0.8s;
+    transition: all 0.4s;
 }
 .card-class-image
 {
@@ -49,14 +49,13 @@
 }
 .card-class-button
 {
-    
-
     display: flex;
     justify-content: center;
     align-items: center;
 
     width: 100%;
 
+    border: none;
     background-color: #93215A;
     
     padding: 1rem;
@@ -66,10 +65,16 @@
     font-weight: bold;
 
     border-radius: 2rem;
+
+    transition-duration: 0.2s;
 }
 .card-class-button:hover
 {
     cursor: pointer;
     color: white;
     text-decoration: none;
+
+    box-shadow: 5px 5px 20px 1px rgba(37, 47, 58, 0.31);
+
+    transition: all 0.2s;
 }
