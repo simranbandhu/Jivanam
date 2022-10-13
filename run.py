@@ -19,6 +19,8 @@ import os
 from os import environ
 import requests
 
+import stripe
+
 # Local imports
 from user import User, Anonymous
 from message import Message
@@ -33,6 +35,8 @@ import user_forecast
 app = Flask(__name__)
 socketio = SocketIO(app)
 
+YOUR_DOMAIN = "http://localhost:8080"
+
 # Configuration
 config = configparser.ConfigParser()
 config.read('configuration.ini')
@@ -44,7 +48,7 @@ app.config['PREFERRED_URL_SCHEME'] = "https"
 app.config['SQLALCHEMY_DATABASE_URI'] = environ.get(
     'DATABASE_URL', 'sqlite:///ETL/output_file/maternal_mortality.sqlite')
 
-
+stripe.api_key = 'sk_test_51LsJotSB8P98qa61NxqfyPqz0Yt5n15J4s6YIyn9Y2KVcrI0we14TAgH8Lh8blv2tKsKtV4GX27XPSUiP2x41USU00zqe6rW09'
 # Create Pymongo
 mongo = PyMongo(app)
 
@@ -184,6 +188,34 @@ def login():
     # Redirect to login page on error
     return redirect(url_for('login', error=1))
 
+
+
+@app.route('/success',methods=['GET'])
+def success():
+    return render_template("success.html")
+
+@app.route('/cancel',methods=['GET'])
+def cancel():
+    return render_template("cancel.html")    
+
+@app.route('/create-checkout-session', methods=['POST'])
+def create_checkout_session():
+    try:
+        checkout_session = stripe.checkout.Session.create(
+            line_items=[
+                {
+                    'price': 'price_1LsJv5SB8P98qa619o60ivDF',
+                    'quantity': 1,
+                },
+            ],
+            mode='payment',
+            success_url=YOUR_DOMAIN + '/success',
+            cancel_url=YOUR_DOMAIN + '/cancel',
+        )
+    except Exception as e:
+        return str(e)
+ 
+    return redirect(checkout_session.url, code=303)
 
 # Register
 @app.route('/register', methods=['POST', 'GET'])
