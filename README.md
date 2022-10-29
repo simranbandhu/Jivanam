@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Running Rasa server
 ```
-cd Postpartem_Bot
+cd Health_Bot
 ```
 ```
 rasa run 
