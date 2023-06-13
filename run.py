@@ -468,6 +468,21 @@ def logout():
 def food():
     return render_template("food.html")
 
+@app.route('/music', methods=['GET'])
+@login_required
+def music():
+    return render_template("music.html")
+
+@app.route('/art', methods=['GET'])
+@login_required
+def art():
+    return render_template("art.html")
+
+@app.route('/yoga', methods=['GET'])
+@login_required
+def yoga():
+    return render_template("yoga.html")
+
 @app.route('/meds', methods=['GET'])
 @login_required
 def meds():
