@@ -11,7 +11,7 @@ https://user-images.githubusercontent.com/67486606/193334529-476a98f4-2a07-49a6-
 * Use the package manager [pip](https://pip.pypa.io/en/stable/) to install all dependencies.
 
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt --use-deprecated=legacy-resolver
 ```
 
 
